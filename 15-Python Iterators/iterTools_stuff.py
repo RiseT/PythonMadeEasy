@@ -30,7 +30,7 @@
 ####
 ####for x in repeat (my_func(2), 6):
 ####    print(x, end = ' ')
-##   
+##
 ##### chain()
 ####list1 = [1,2,3]
 ####tup1 = (2,3,4)
@@ -84,12 +84,12 @@
 # Amortize a 2.5% loan of 3000 with 12 annual payments of 100\
 ##from itertools import *
 ##payments = [10000, -261, -261, -261, -261, -261, -261, -261, -261, -261, -261,
-##            -261, -261, -261]          
+##            -261, -261, -261]
 ##amor = list(accumulate(payments, lambda bal, pmt: bal * 1.025 + pmt))
 ##payment = 0
 ##for pay in amor:
 ##    print("Payment Number: ", payment, "Loan Amt.: ", pay)
-##    payment += 1      
+##    payment += 1
 
 
 ## # tee
@@ -99,18 +99,19 @@
 ##
 ##for i in screen:
 ##    print( "To the Screen: ", i)
-##my_file = open("my_file.txt", "w")    
+##my_file = open("my_file.txt", "w")
 ##for i in file1:
 ##    print ( "To The File", i, file =my_file)
 ##my_file.close()
 
-#startmap
+# startmap
 from itertools import *
+
 ##
 ##def fun():
 ##    my_list = ['a', 'b', 'c', 'd']
 ##    return my_list
-##    
+##
 ##tup1 = ((1, 2),(2,3),(3,4))
 ##
 ##
@@ -125,7 +126,7 @@ from itertools import *
 ##import os
 ##my_tup = [("/dir_1", "file1"),("/dir_2", "file2"), ("/dir_3", "file3")]
 ##x = starmap(os.path.join, my_tup)
-##                  
+##
 ##for i in x:
 ##    print(i)
 
@@ -144,7 +145,7 @@ from itertools import *
 ##from itertools import *
 ##
 ##def less_than_20(x):
-##    return x < 20    
+##    return x < 20
 ##
 ##my_filt_false = takewhile(less_than_20, count())
 ##
@@ -154,7 +155,7 @@ from itertools import *
 ##from itertools import *
 ##
 ##def less_than_20(x):
-##    return x < 20    
+##    return x < 20
 ##
 ##my_list = [1,5,6,7,8,18,19,20,21,22,23]
 ##my_drop = dropwhile(less_than_20, my_list )
@@ -191,7 +192,6 @@ from itertools import *
 ##    print(i, end= ' ')
 
 
-    
 ##from itertools import *
 ##
 ##list1 = [1,2,3,4]
@@ -204,6 +204,6 @@ from itertools import *
 
 
 from itertools import zip_longest
-for i in zip_longest([1,2,3,4], ["a", "b", "c"],'4567', 'hello'):
-   print (i)
 
+for i in zip_longest([1, 2, 3, 4], ["a", "b", "c"], "4567", "hello"):
+    print(i)

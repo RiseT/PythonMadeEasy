@@ -27,7 +27,6 @@ from datetime import date, datetime
 ##print("Dec 17th was a: ", dec_17_was )
 
 
-
 # NOW WORKING WITH datetime*****************************
 ##
 ###current local date and time
@@ -41,9 +40,10 @@ from datetime import date, datetime
 ##
 
 from datetime import datetime, tzinfo, timedelta
+
 to_day = datetime.today()
-#Return the current UTC date and time
-#UTC is the time standard commonly used across the world. 
+# Return the current UTC date and time
+# UTC is the time standard commonly used across the world.
 utc = to_day.utcnow()
 print(utc)
 
@@ -56,7 +56,7 @@ print(to_day.time())
 # return the  iso calendar tuple of year, week number and weekday
 print(to_day.isocalendar())
 
-#Return a string representing the date and time in ISO 8601 format
+# Return a string representing the date and time in ISO 8601 format
 print(to_day.isoformat())
 
 

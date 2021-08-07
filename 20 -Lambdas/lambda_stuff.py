@@ -1,5 +1,4 @@
-
-#our first lambda
+# our first lambda
 ##y = lambda x : x + x
 ##print(y(2))
 
@@ -31,7 +30,7 @@
 ###output = 8
 
 
-#convential function mult 2 numbers
+# convential function mult 2 numbers
 ##def mult(a,b):
 ##    return a * b
 ##
@@ -43,8 +42,8 @@
 ##c = lambda a, b : a * b
 ##print(c(4,5))
 ###output = 20
-    
-#map function and lambda
+
+# map function and lambda
 
 ##l1 = [2,2,2]  # list 1
 ##l2 = [5,10,20]  # list 2
@@ -62,13 +61,12 @@
 ##
 ## # output: 20 25 30
 
-animals = [('rosie', 13, "Chihuahua"),
-               ('max', 11, "Coonhound"),
-               ('Jake', 12, "Border Collie"),]
+animals = [
+    ("rosie", 13, "Chihuahua"),
+    ("max", 11, "Coonhound"),
+    ("Jake", 12, "Border Collie"),
+]
 
 a = sorted(animals, key=lambda x: x[1], reverse=True)
 for x in a:
     print(x)
-
-           
-    

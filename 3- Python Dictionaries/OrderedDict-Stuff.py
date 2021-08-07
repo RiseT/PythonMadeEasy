@@ -33,31 +33,41 @@ from collections import OrderedDict
 ##dict1 = {"Earth":1, "Fire": 2, "Wind":3, "Ether":4, "Water": 5}
 ##print(json.dumps(dict1))
 
-d1 = {"apple": "pie", "fudge": "brownies", "carrot": "cake", "milky": "way", "yum": "YUM"}
-d2 = {"apple": "crumble", "vanilla": "brownies", "carrot": "cake", "milky": "way", "yum": "YUM"}
+d1 = {
+    "apple": "pie",
+    "fudge": "brownies",
+    "carrot": "cake",
+    "milky": "way",
+    "yum": "YUM",
+}
+d2 = {
+    "apple": "crumble",
+    "vanilla": "brownies",
+    "carrot": "cake",
+    "milky": "way",
+    "yum": "YUM",
+}
 
 # what keys are in common
 keys_com = d1.keys() & d2.keys()
-print( "Keys in common: ", keys_com)
+print("Keys in common: ", keys_com)
 
 # what  items (keys and values) are in common
 in_common = d1.items() & d2.items()
 print("Items in common: ", in_common)
 
 # what  keys are in d1 but NOT d2?
-only_d1 = d1.keys() -  d2.keys()
+only_d1 = d1.keys() - d2.keys()
 print("keys in d1 only: ", only_d1)
 
 # what  keys are in d2 but NOT d1?
-only_d2 = d2.keys() -  d1.keys()
-print("keys in d2 only: ",only_d2)
+only_d2 = d2.keys() - d1.keys()
+print("keys in d2 only: ", only_d2)
 
 # what  keys are in d2 but NOT d1?
-items_d2 = d2.items() -  d1.items()
+items_d2 = d2.items() - d1.items()
 print("pairs in  d2 only: ", items_d2)
 
 # what  keys are unique to each set, but not in both
 unique = d2.items() ^ d1.items()
 print("Keys unique to each: ", unique)
-
-

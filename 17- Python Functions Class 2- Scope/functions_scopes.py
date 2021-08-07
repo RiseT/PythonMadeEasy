@@ -1,4 +1,4 @@
-#EXAMPLE #1
+# EXAMPLE #1
 ##x = 50  # defined in the global scope
 ##def func(y): # func defined in the global scope
 ##    z = x + y # y,z local, x is defined in the global scope
@@ -25,33 +25,30 @@
 ##B-Built-in '''
 
 
-
-
-
-#without using the global statement in the funcion
+# without using the global statement in the funcion
 ##x = 10 # global space
 ##
 ##def globs():
 ##   # no global x
 ##    x = 100
-##    
+##
 ##    return x
 ##
 ##print("2. Calling the function: ", globs())
 ##print("2. Print x in global space: ", x) # this prints the value of x in the global space
 
 
+x = 10  # global space
 
-x = 10 # global space
+
 def globs():
     global x
     x = 100
-    
+
     return x
 
+
 print("1. Calling the function: ", globs())
-print("1. Print x in global space: ", x) # prints out value of x in global space, this would print 10 normally, but now 100
-
-
-    
-
+print(
+    "1. Print x in global space: ", x
+)  # prints out value of x in global space, this would print 10 normally, but now 100

@@ -1,9 +1,8 @@
-
 # def addme(y):
 #     x = 5
 #     return x + y
 
-# #addme('hi')  
+# #addme('hi')
 # # returns: Exception has occurred: TypeError
 # #unsupported operand type(s) for +: 'int' and 'str'
 # #program terminates
@@ -27,132 +26,132 @@
 #     print("You raised a TypeError")
 
 
-#different type of errors
+# different type of errors
 
 # try:
 #     list0 = [1,2,3]
 #     list1 = {}
 #     list1.append(list0)
 # except NameError:
-#     print("NameError")  
+#     print("NameError")
 # except SyntaxError:
-#     print("This is a syntax error") 
+#     print("This is a syntax error")
 # except TypeError:
 #     print("Type Error")
 # except AttributeError:
 #     print("Attribute Error")
-#     print("this one wins") 
+#     print("this one wins")
 
 
 # try:
 #     hello = 'hello'
 #     print(hello[7])
-    
+
 # except NameError:
-#     print("NameError")  
+#     print("NameError")
 # except SyntaxError:
-#     print("This is a syntax error") 
+#     print("This is a syntax error")
 # except TypeError:
 #     print("Type Error")
 # except AttributeError:
 #     print("Attribute Error")
 # except KeyError:
-#     print("Key Error")                
+#     print("Key Error")
 # except IndexError:
-#     print("Index Error") 
-#     print("this one wins") 
+#     print("Index Error")
+#     print("this one wins")
 
 
 # try:
 #     hi = 'hi'
 #     x = 2
 #     print(hi + x)
-    
+
 # except NameError:
-#     print("NameError")  
+#     print("NameError")
 # except SyntaxError:
-#     print("This is a syntax error") 
+#     print("This is a syntax error")
 # except TypeError:
 #     print("Type Error")
-#     print("this one wins")  
+#     print("this one wins")
 # except AttributeError:
 #     print("Attribute Error")
 # except KeyError:
-#     print("Key Error")                
+#     print("Key Error")
 # except IndexError:
-#     print("Index Error") 
+#     print("Index Error")
 
 # try:
 #     one = 'one'
 #     print(One)
-    
+
 # except NameError:
-#     print("NameError") 
-#     print("this one wins")  
+#     print("NameError")
+#     print("this one wins")
 # except SyntaxError:
-#     print("This is a syntax error") 
+#     print("This is a syntax error")
 # except TypeError:
-#     print("Type Error") 
+#     print("Type Error")
 # except AttributeError:
 #     print("Attribute Error")
 # except KeyError:
-#     print("Key Error")                
+#     print("Key Error")
 # except IndexError:
 #     print("Index Error")
 
 
 # try:
-#     eval ('a === b')   
+#     eval ('a === b')
 # except NameError:
-#     print("NameError")   
+#     print("NameError")
 # except SyntaxError:
 #     print("This is a syntax error")
-#     print("this one wins")   
+#     print("this one wins")
 # except TypeError:
-#     print("Type Error") 
+#     print("Type Error")
 # except AttributeError:
 #     print("Attribute Error")
 # except KeyError:
-#     print("Key Error")                
+#     print("Key Error")
 # except IndexError:
-#     print("Index Error")            
+#     print("Index Error")
 
-# NOTE: you can only catch syntax errors 
-# when python is trying to parse something. 
+# NOTE: you can only catch syntax errors
+# when python is trying to parse something.
 # This includes exec, eval, import
 
 # try:
 #     dict2 = {1:"one", 2:"two" }
-#     print(dict2[3]) 
+#     print(dict2[3])
 # except NameError:
-#     print("NameError")    
+#     print("NameError")
 # except SyntaxError:
-#     print("This is a syntax error") 
+#     print("This is a syntax error")
 # except TypeError:
-#     print("Type Error") 
+#     print("Type Error")
 # except AttributeError:
 #     print("Attribute Error")
 # except KeyError:
-#     print("Key Error") 
-#     print("this one wins")                
+#     print("Key Error")
+#     print("this one wins")
 # except IndexError:
-#     print("Index Error") 
- 
+#     print("Index Error")
+
 
 # not specified -it catches them all
 # try:
 #     dict2 = {1:"one", 2:"two" }
-#     print(dict2[3]) 
+#     print(dict2[3])
 # except:
-#     print("All other errors")      
+#     print("All other errors")
 
-# using the else clause   
-# 
-# 
+# using the else clause
+#
+#
 # try:
 #     y = 1/0
 # except ZeroDivisionError:
-#     print("You're trying to divide by zero")  
+#     print("You're trying to divide by zero")
 # else:
 #     print("else branch")
 
@@ -160,11 +159,11 @@
 # try:
 #     y = 1/1
 # except ZeroDivisionError:
-#     print("You're trying to divide by zero")  
+#     print("You're trying to divide by zero")
 # else:
-#     print("else branch has been reached - no error to trap")   
-# 
-#try/finally
+#     print("else branch has been reached - no error to trap")
+#
+# try/finally
 
 # finally no error
 # my_file = open('my_file.txt')
@@ -176,20 +175,20 @@
 #     if my_file.closed:
 #         print("No error. File is Closed")
 
-# print("keep going if all is well") 
+# print("keep going if all is well")
 # print()
 # print("Now when error is detected")
 # my_file = open('my_file.txt')
 # try:
 #     data = my_file.read()
 #     print(2+ "hi")
-    
+
 # finally:
 #     my_file.close()
 #     if my_file.closed:
 #         print("Error File still gets Closed")
 
-# print("keep going if all is well") 
+# print("keep going if all is well")
 
 
 # #unified:
@@ -197,13 +196,13 @@
 # try:
 #     print(2+ "hi")
 # except TypeError:
-#     print("type error caught") 
+#     print("type error caught")
 # else:
-#     print("No Error")           
+#     print("No Error")
 # finally:
 #     print("finally always runs")
 
-# print("keep going if all is well") 
+# print("keep going if all is well")
 
 # print()
 # print("Error in except branch")
@@ -212,21 +211,19 @@
 # try:
 #     print(2+ "hi")
 # except:
-#     print("type error caught") 
+#     print("type error caught")
 #     5/0
 # else:
-#     print("No Error")           
+#     print("No Error")
 # finally:
 #     print("finally always runs")
 
-# print("keep going if all is well") 
-  
+# print("keep going if all is well")
 
- #the raise statement
+
+# the raise statement
 try:
     raise NameError("hello")
 except NameError:
     print("Propagating To Default Level")
     raise
-  
-

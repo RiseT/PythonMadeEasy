@@ -1,4 +1,4 @@
-#Ternary Operators aka conditional expressions
+# Ternary Operators aka conditional expressions
 ##a = 4
 ##b = 5
 ##the_value = a if a < b else b
@@ -27,8 +27,6 @@ foodies = ("tofu", "tempeh", "bean sprouts", "cauliflower-crust Pizza")
 
 foodies_list = [food for food in foodies]
 print(foodies_list)
-my_food_list = [food for food in foodies if food != 'bean sprouts']
+my_food_list = [food for food in foodies if food != "bean sprouts"]
 
 print(my_food_list)
-
-

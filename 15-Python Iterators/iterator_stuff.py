@@ -22,7 +22,7 @@
 
 
 # generator expression
-list1 = [1,2,3,4]
+list1 = [1, 2, 3, 4]
 
 mult_gen = (i * 4 for i in list1)
 ##print(type(mult_gen))
@@ -52,7 +52,7 @@ mult_gen = (i * 4 for i in list1)
 ##    if (x in secret):
 ##        return x
 ##    else:
-##        return 
+##        return
 ##
 ##my_list = [10,15,20,25,30,35,40]
 ##x = list(filter(secret_numbers, my_list))
@@ -102,11 +102,8 @@ mult_gen = (i * 4 for i in list1)
 
 # zip()
 
-L1 = [1,2,3,4,5,6]
-L2 = [2,3,4,5,6,7]
+L1 = [1, 2, 3, 4, 5, 6]
+L2 = [2, 3, 4, 5, 6, 7]
 
-me_new= dict(zip(L1,L2))
+me_new = dict(zip(L1, L2))
 print(me_new)
-
-
-    

@@ -25,13 +25,13 @@
 ####print(intersect([1,2,3,4], (3,2)))
 ##
 ##
-##  ###############- SCOPES #################          
+##  ###############- SCOPES #################
 ### EXMPLE #1*****************************
 ####
 ####X = 50 # global scope
 ####def func(Y): # func is global scope
 ####    Z = X + Y  # Y and Z are local scope, but X is global
-####    
+####
 ####    return Z
 ##
 ####print(func(25))
@@ -44,7 +44,7 @@
 ####def func():
 ####    X = 52
 ####    return X
-####    
+####
 ##func()
 ##print(X)
 ##print(func())
@@ -138,7 +138,6 @@
 ##print(b)
 
 
-
 ##def example(c):
 ##    a = c
 ##    return a
@@ -155,18 +154,19 @@
 ##print(x, L)       # then we print the current values of x and L
 
 
-
- 
 ################ *ARGS #####################
 
 
 def intersect(*args):
     res = []
-    for x in args[0]: # evaluate the first sequence
-        if x in res: continue   # no duplicates- already in our list?, move on
-        for other in args[1:]: #for each of the rest of the sequences (2  through however many)
-            if x not in other: break # if objects in the first one not in this one (objects dont match), move on
+    for x in args[0]:  # evaluate the first sequence
+        if x in res:
+            continue  # no duplicates- already in our list?, move on
+        for other in args[
+            1:
+        ]:  # for each of the rest of the sequences (2  through however many)
+            if x not in other:
+                break  # if objects in the first one not in this one (objects dont match), move on
         else:
-            res.append(x) # if there is a match, then add it to the list, 'res'
+            res.append(x)  # if there is a match, then add it to the list, 'res'
     return res  # when done with the evaluation of each sequence, return the list to the caller.
-    

@@ -80,7 +80,6 @@
 ##print(type(x1)) # output -----><class 'list'>
 
 
-
 coffee = (1.25, 2.15, 4.45, 6.50)
 lowest_cost = 0
 second_lowest_cost = 0
@@ -89,19 +88,19 @@ highest = 0
 for x in coffee:
     if x < 2.00:
         lowest_cost = lowest_cost + (30 * x)
-    elif x > 2.00  and x < 4.00:  
-       second_lowest_cost = second_lowest_cost + (30 * x)
-    elif x > 4.00  and x < 6.00:  
-       third_lowest_cost = third_lowest_cost + (30 * x)
+    elif x > 2.00 and x < 4.00:
+        second_lowest_cost = second_lowest_cost + (30 * x)
+    elif x > 4.00 and x < 6.00:
+        third_lowest_cost = third_lowest_cost + (30 * x)
     else:
-        highest = (coffee[3] * 30)     
+        highest = coffee[3] * 30
 
 print("The lowest monthly total for coffee is: ", lowest_cost)
 print("The  2nd lowest monthly total for coffee is: ", second_lowest_cost)
-print("The  3rd  lowest monthly total for coffee is: ", third_lowest_cost) 
+print("The  3rd  lowest monthly total for coffee is: ", third_lowest_cost)
 print("The  Highest monthly total for coffee is: ", highest)
-print("If I go with the least expensive, compared to the highest, I can save: "\
-      , highest - lowest_cost, "at this month's prices")
-        
-        
-        
+print(
+    "If I go with the least expensive, compared to the highest, I can save: ",
+    highest - lowest_cost,
+    "at this month's prices",
+)

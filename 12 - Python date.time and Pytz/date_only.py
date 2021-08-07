@@ -8,8 +8,8 @@
 ##day = timer.weekday()
 ##if day == 0:
 ##    print("Today is Monday: " , day)
-### output:  Today is Monday:  0   
-##    
+### output:  Today is Monday:  0
+##
 ### this prints out the weekday it is
 ##wkday = timer.isoweekday()
 ##if timer.isoweekday():
@@ -18,6 +18,7 @@
 
 
 from datetime import date
+
 ##### what is today?
 ##today = date.today()
 ##print(today)
@@ -27,8 +28,6 @@ from datetime import date
 ##print(year)
 ##day = today.day
 ##print(day)
-
-
 
 
 ###How many days was Halloween (10/31/2018)?
@@ -68,12 +67,13 @@ from datetime import date
 ### EXAMPLE OF COUNTING DAYS TO AN EVENT ***********
 import time
 from datetime import date
+
 today = date.today()
 print(today)
 
 my_bonus = date(today.year, 2, 15)
 if my_bonus < today:
-    my_bonus = my_bonus.replace(year = today.year + 1)
+    my_bonus = my_bonus.replace(year=today.year + 1)
 print(my_bonus)
 time_to_bonus = abs(my_bonus - today)
-print("Your bonus comes in: ", time_to_bonus.days, 'days. :)')
+print("Your bonus comes in: ", time_to_bonus.days, "days. :)")

@@ -1,23 +1,24 @@
-#property decorator
-class Prop():
+# property decorator
+class Prop:
     def __init__(self, num):
-        self.n = num  
+        self.n = num
 
     @property
-    def propdeco(self): # gets value
-        '''I am the doc for prop'''
+    def propdeco(self):  # gets value
+        """I am the doc for prop"""
         return self.n
 
     @propdeco.setter
-    def propdeco(self, value): # sets a value
-        print('set num: ', value)
-        self.n = value 
+    def propdeco(self, value):  # sets a value
+        print("set num: ", value)
+        self.n = value
 
     @propdeco.deleter
-    def propdeco(self): # deletes a value
+    def propdeco(self):  # deletes a value
         print("deleting num")
         del self.n
-      
+
+
 num = Prop(22)
 print("here is the getter: ", num.propdeco)
 num.propdeco = 47

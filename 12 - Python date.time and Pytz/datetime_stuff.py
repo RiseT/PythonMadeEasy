@@ -1,6 +1,7 @@
 import datetime
 from datetime import date, datetime
-## 
+
+##
 ##x = datetime.MINYEAR
 ##print("The earliest year allowed in this module is: ", x)
 ##
@@ -11,16 +12,17 @@ from datetime import date, datetime
 
 import datetime
 from datetime import date, datetime
-timer = date(2018,12,31)
+
+timer = date(2018, 12, 31)
 print(timer)
-#output- 2018-12-31
+# output- 2018-12-31
 
 # this prints out the day of the week it is
 day = timer.weekday()
 if day == 0:
-    print("Today is Monday: " , day)
-# output:  Today is Monday:  0   
-    
+    print("Today is Monday: ", day)
+# output:  Today is Monday:  0
+
 # this prints out the weekday it is
 wkday = timer.isoweekday()
 if timer.isoweekday():
@@ -44,9 +46,9 @@ print(iso)
 ##print(ctimer)
 # output: Mon Dec 31 00:00:00 2018
 
-#The program below converts a datetime object containing current date
-#and time to different string formats.
-#timer = date(2018,12,31)
+# The program below converts a datetime object containing current date
+# and time to different string formats.
+# timer = date(2018,12,31)
 ##day = timer.strftime("%A")
 ##print("today is: ",day)
 ##
@@ -142,8 +144,8 @@ print(iso)
 ##print( str(what_date.month)+ "/" + str(what_date.day))
 
 
- # How is this timedelta??????
- #A timedelta object represents a duration, the difference between two dates or times
+# How is this timedelta??????
+# A timedelta object represents a duration, the difference between two dates or times
 ##datetimeFormat = '%Y-%m-%d'
 
 ##date1 = '2018-12-31'
@@ -155,10 +157,10 @@ print(iso)
 ##print("Months:", (round(diff.days/30,1)))
 
 # converting from a date in string format to datetime using strptime
-datetimeFormat = '%B %d, %Y'
-string_date = datetime.strptime('June 25, 2019', datetimeFormat )
+datetimeFormat = "%B %d, %Y"
+string_date = datetime.strptime("June 25, 2019", datetimeFormat)
 print(string_date)
- 
+
 ### what is today?
 today = date.today()
 print(today)
@@ -181,16 +183,17 @@ print(whole_thing)
 current_t = datetime.time(datetime.now())
 print(current_t)
 
-#print out 12 hour time it is now:
+# print out 12 hour time it is now:
 now = datetime.now()
 print(now.strftime("%I:%M  %p"))
 
-#print out 24 hour time it is now:
+# print out 24 hour time it is now:
 print(now.strftime("%H:%M"))
 
 # timedelta:::
 
 from datetime import timedelta
+
 print(timedelta(days=365))
 print("today is: " + str(datetime.now()))
 print("30 days from day will be:" + str(datetime.now() + timedelta(days=30)))
@@ -279,7 +282,7 @@ print("60 days from day will be:" + str(datetime.now() + timedelta(days=60)))
 ##print(my_bonus)
 ##time_to_bonus = abs(my_bonus - today)
 ##print(time_to_bonus.days)
-    
+
 
 # NOW WORKING WITH datetime*****************************
 ##
@@ -293,7 +296,7 @@ print("60 days from day will be:" + str(datetime.now() + timedelta(days=60)))
 ##print(now)
 ##
 ###Return the current UTC date and time
-###UTC is the time standard commonly used across the world. 
+###UTC is the time standard commonly used across the world.
 ##utc = to_day.utcnow()
 ##print(utc)
 ##
@@ -321,5 +324,3 @@ print("60 days from day will be:" + str(datetime.now() + timedelta(days=60)))
 ##
 ###Return the local date corresponding to the POSIX timestamp
 ##print(to_day.timestamp())
-
-

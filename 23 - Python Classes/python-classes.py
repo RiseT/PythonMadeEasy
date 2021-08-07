@@ -1,11 +1,11 @@
 # class/Instance creations
 
-class Instruments():
-    def __init__ (self, category, name, sound_type ):
+
+class Instruments:
+    def __init__(self, category, name, sound_type):
         self.category = category
         self.name = name
         self.sound_type = sound_type
-        
 
     def get_category(self):
         return self.category
@@ -16,18 +16,25 @@ class Instruments():
     def get_sound_type(self):
         return self.sound_type
 
-    def set_category(self, newCat = ''):
+    def set_category(self, newCat=""):
         self.category = newCat
 
-    def set_name(self, newName = ''):
+    def set_name(self, newName=""):
         self.name = newName
 
-    def set_sound_type(self, stype = ''):
-        self.sound_type= stype
+    def set_sound_type(self, stype=""):
+        self.sound_type = stype
 
-    def __str__ (self):
-        return "Insturment:  " +str(self.name) + ":" + str(self.category) + ":" +str(self.sound_type) 
-    
+    def __str__(self):
+        return (
+            "Insturment:  "
+            + str(self.name)
+            + ":"
+            + str(self.category)
+            + ":"
+            + str(self.sound_type)
+        )
+
 
 ##g1 = Instruments("String", "Guitar", "Versatile")
 ##g2 = Instruments("String", "E-Guitar", "Agressive")
@@ -42,32 +49,33 @@ class Instruments():
 
 # create a subclass of Instruments called Guitars
 
+
 class Guitars(Instruments):
     Guit_Nums = 1  # created class variable
-    
+
     # instances consructor method
-    def __init__ (self,category, name, brand, sound_type,  year, g_type):
-        Instruments.__init__(self, category, name, sound_type )
+    def __init__(self, category, name, brand, sound_type, year, g_type):
+        Instruments.__init__(self, category, name, sound_type)
         self.brand = brand
         self.year = year
-        self.g_type= g_type
-        self.gid = Guitars.Guit_Nums   # from class var
-        Guitars.Guit_Nums += 1   # increment # of guitars created 
+        self.g_type = g_type
+        self.gid = Guitars.Guit_Nums  # from class var
+        Guitars.Guit_Nums += 1  # increment # of guitars created
 
-    def set_play(self, style= ""):
+    def set_play(self, style=""):
         self.g_type = style
-        
+
     def get_gid(self):
-        return str(self.gid)    
+        return str(self.gid)
 
-    def __str__ (self):
-        return "This Guitar is a : " +str(self.name)+ "," +str(self.brand)
+    def __str__(self):
+        return "This Guitar is a : " + str(self.name) + "," + str(self.brand)
 
- 
-g3 = Guitars("String", "T5", "Taylor","sweet",  "2012", "Accoustic/Electirc")
+
+g3 = Guitars("String", "T5", "Taylor", "sweet", "2012", "Accoustic/Electirc")
 print(g3)
 g4 = Guitars("String", "Jumbo", "Gibson", "booming", "1966", "Accoustic")
-print("This Gibson Jumbo is: ", g4.sound_type, ', And was built in: ',  g4.year)
+print("This Gibson Jumbo is: ", g4.sound_type, ", And was built in: ", g4.year)
 print("How Many Guitars have been created? ", Guitars.Guit_Nums)
 print("What is g4's GID? ", g4.gid)
 print(g4.g_type)
@@ -76,7 +84,7 @@ print(g4.g_type)
 
 
 ##if __name__ == '__main__':
-##    
+##
 ##    g3 = Guitars("String", "T5", "Taylor","sweet",  "2012", "Accoustic/Electirc")
 ##    print(g3)
 ##    g4 = Guitars("String", "Jumbo", "Gibson", "booming", "1966", "Accoustic")
@@ -86,6 +94,3 @@ print(g4.g_type)
 ##    print(g4.g_type)
 ##    g4.set_play("Classical")
 ##    print(g4.g_type)
-
-    
-    

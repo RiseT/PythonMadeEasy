@@ -1,6 +1,7 @@
 import getpass
+
+
 def decorator_un(print_func):
-    
     def testun():
         username = getpass.getuser()
         if username == "claudiaacerra":
@@ -8,9 +9,11 @@ def decorator_un(print_func):
             return print_func()
         else:
             return "wrong user"
+
     return testun
 
-@ decorator_un
+
+@decorator_un
 def print_to_file():
     with open("file.txt", "r") as f:
         data = f.readlines()
@@ -18,5 +21,6 @@ def print_to_file():
             print(num, line)
 
     return "****Success****"
+
 
 print(print_to_file())

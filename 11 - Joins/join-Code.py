@@ -24,20 +24,20 @@
 ##Bread
 ##Tofu '''
 
-#The os.path.join() function is helpful if you need to create strings for filenames
+# The os.path.join() function is helpful if you need to create strings for filenames
 import os
 
 my_dir = "/Users/test"
-my_files = ['.DS_Store', 'test.ser', 'testing123', 'test.txt', 'hello.txt']
+my_files = [".DS_Store", "test.ser", "testing123", "test.txt", "hello.txt"]
 
 for files in my_files:
-    
+
     my_join = os.path.join(my_dir, files)
     print(my_join)
 
 # output:
-/Users/test/.DS_Store
-/Users/test/test.ser
-/Users/test/testing123
-/Users/test/test.txt
-/Users/test/hello.txt
+# /Users/test/.DS_Store
+# /Users/test/test.ser
+# /Users/test/testing123
+# /Users/test/test.txt
+# /Users/test/hello.txt

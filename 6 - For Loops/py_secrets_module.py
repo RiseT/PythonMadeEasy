@@ -5,15 +5,17 @@ import secrets
 ##at least one uppercase character, special characters and at least 1 number.
 
 alphabet = string.ascii_letters + string.digits + string.punctuation
-x =string.punctuation
-while True: 
-    password = ''.join(secrets.choice(alphabet) for i in range(12))
-    
-    if (any(c.islower() for c in password) and
-        any(c.isupper() for c in password)  
-        and sum(c.isdigit() for c in password) >= 1 ):
-            
-        print(password) 
+x = string.punctuation
+while True:
+    password = "".join(secrets.choice(alphabet) for i in range(12))
+
+    if (
+        any(c.islower() for c in password)
+        and any(c.isupper() for c in password)
+        and sum(c.isdigit() for c in password) >= 1
+    ):
+
+        print(password)
         break
 
 

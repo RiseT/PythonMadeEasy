@@ -1,4 +1,4 @@
-#too generators
+# too generators
 
 ##ctype = ['hot', 'cold']
 ##flavor = ['plain', 'vanilla', 'hazelnut']
@@ -8,7 +8,7 @@
 ##    print(drink)
 
 
-#groupby
+# groupby
 ##
 ##tools = ['hammer', 'saw', 'drill', 'screwdriver', 'tape measure',
 ##         'excavator', 'nails', 'clamps', 'wrenches', 'knives', 'hand planes',
@@ -30,7 +30,5 @@
 ##print(res)
 
 word = "weekend"
-jumble2 =  (word[item:] + word[:item] for item in range(len(word)))
+jumble2 = (word[item:] + word[:item] for item in range(len(word)))
 print(list(jumble2))
-
-    

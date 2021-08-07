@@ -19,7 +19,7 @@
 ##f(b)
 ##print(b)
 
-#example #1
+# example #1
 ##def f(a):
 ##    a = 99
 ##
@@ -35,7 +35,7 @@
 ###example #3
 ##def f(a):
 ##    a = 99
-##    
+##
 ##b = 88
 ##f(b)
 ##print(b)
@@ -53,15 +53,14 @@
 ##print(z)
 
 
-    
-
 ###*args
 def words(*args):
     return args
 
+
 words()  # you can pass nothing
-print(words("me")) # pass one string
-print(words([1,2,3], (4,5,6))) # pass 1 list and 1 tuple
+print(words("me"))  # pass one string
+print(words([1, 2, 3], (4, 5, 6)))  # pass 1 list and 1 tuple
 
 
 ###**args
@@ -70,4 +69,3 @@ print(words([1,2,3], (4,5,6))) # pass 1 list and 1 tuple
 ##
 ##kwords()  # you can pass nothing
 ##print(kwords(a='a', b='b')) # 2 keywords
-
